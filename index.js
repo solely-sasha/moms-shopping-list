@@ -16,6 +16,7 @@ const newItem = item => {
     <button class = "delete"> X </button>
     </li>
     `
+    list.innerHTML += html
 }
 
 
@@ -24,5 +25,8 @@ form.addEventListener('submit', e => {
     e.preventDefault();
     // creat a variable for the input value
     const item = form.title.value
-
+    // console.log(item)
+    newItem(item)
+    form.reset()
 })
+
