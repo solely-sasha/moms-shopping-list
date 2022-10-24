@@ -9,7 +9,14 @@ const item = form.title.value
 
 
 //  create a template for the new todo items with the item variable as the parameter
-
+const newItem = item => {
+    const html = `<li>
+    <div>${item}</div>
+    <button>edit</button>
+    <button class = "delete"> X </button>
+    </li>
+    `
+}
 
 
 // listen for a submit event
