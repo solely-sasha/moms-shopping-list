@@ -30,3 +30,10 @@ form.addEventListener('submit', e => {
     form.reset()
 })
 
+// add a click event to the ul to delete items 
+list.addEventListener('click', e => {
+    if(e.target.classList.contains('delete')){
+        // console.log('clicked')
+        e.target.parentElement.remove()
+    }
+})
